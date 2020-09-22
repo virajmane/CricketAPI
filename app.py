@@ -14,7 +14,7 @@ result = {"matches": match, "livescore": livescore, "scorecard": scorecard, "mat
 final = json.dumps(result, indent=4)
 
 app = Flask('__init__')
-@app.route("/api")
+@app.route("/")
 def index():
   return f"<code>{final}</code>"
 
