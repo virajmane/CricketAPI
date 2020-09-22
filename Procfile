@@ -1,1 +1,1 @@
-web: gunicorn app:cric
+web: gunicorn cric.wsgi --log-file -
