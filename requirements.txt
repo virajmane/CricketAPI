@@ -1,0 +1,4 @@
+flask
+pycricbuzz
+json
+gunicorn
