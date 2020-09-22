@@ -10,8 +10,8 @@ scorecard = c.scorecard(mid=mid)
 matchinfo = c.matchinfo(mid=mid)
 commentary = c.commentary(mid=mid)
 
-final = {"matches": match, "livescore": livescore, "scorecard": scorecard, "matchinfo": matchinfo, "commentary": commentary}
-#final = json.dumps(result, indent=4)
+result = {"matches": match, "livescore": livescore, "scorecard": scorecard, "matchinfo": matchinfo, "commentary": commentary}
+final = json.dumps(result)
 
 app = Flask('__init__')
 @app.route("/")
