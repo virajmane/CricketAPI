@@ -1,3 +1,3 @@
 # CricketAPI
 Complete Info about Live Match in JSON
-https://coralgaseousadministrators--five-nine.repl.co/
+https://ipl.virajman3.repl.co/
