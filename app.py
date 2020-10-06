@@ -1,4 +1,4 @@
-from flask import *
+from flask import Flask, jsonify
 from pycricbuzz import Cricbuzz
 import json
 
@@ -14,8 +14,8 @@ def index():
   commentary = c.commentary(mid=mid)
 
   result = {"matches": match, "livescore": livescore, "scorecard": scorecard, "matchinfo": matchinfo, "commentary": commentary}
-  final = json.dumps(result)
-  return f"<code>{final}</code>"
+  final = jsonify(result)
+  return f"{final}"
 
 if __name__ == "__main__":
     app.debug = True
